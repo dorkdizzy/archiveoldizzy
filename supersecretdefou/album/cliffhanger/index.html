@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+</head>
+<script type="text/javascript">
+    /////////////////////////////////////////////////////////
+    // Javascript made by http://peters1.dk/tools/snow.php //
+    /////////////////////////////////////////////////////////
+    
+    // N´OUBLIEZ PAS: De changez le chemin vers  l´image snow.png
+    snow_img = "lol.png";
+    
+    // BONUS: Vous pouvez facilement regler le nombre de flocons que vous voulez sur chaque page...
+    snow_no = 15;
+    
+    if (typeof(window.pageYOffset) == "number")
+    {
+        snow_browser_width = window.innerWidth;
+        snow_browser_height = window.innerHeight;
+    } 
+    else if (document.body && (document.body.scrollLeft || document.body.scrollTop))
+    {
+        snow_browser_width = document.body.offsetWidth;
+        snow_browser_height = document.body.offsetHeight;
+    }
+    else if (document.documentElement && (document.documentElement.scrollLeft || document.documentElement.scrollTop))
+    {
+        snow_browser_width = document.documentElement.offsetWidth;
+        snow_browser_height = document.documentElement.offsetHeight;
+    }
+    else
+    {
+        snow_browser_width = 500;
+        snow_browser_height = 500;	
+    }
+    
+    snow_dx = [];
+    snow_xp = [];
+    snow_yp = [];
+    snow_am = [];
+    snow_stx = [];
+    snow_sty = [];
+    
+    for (i = 0; i < snow_no; i++) 
+    { 
+        snow_dx[i] = 0; 
+        snow_xp[i] = Math.random()*(snow_browser_width-50);
+        snow_yp[i] = Math.random()*snow_browser_height;
+        snow_am[i] = Math.random()*20; 
+        snow_stx[i] = 0.02 + Math.random()/10;
+        snow_sty[i] = 0.7 + Math.random();
+        if (i > 0) document.write("<\div id=\"snow_flake"+ i +"\" style=\"position:absolute;z-index:"+i+"\"><\img src=\""+snow_img+"\" border=\"0\"><\/div>"); else document.write("<\div id=\"snow_flake0\" style=\"position:absolute;z-index:0\"><a href=\"http://peters1.dk/tools/snow.php\" target=\"_blank\"><\img src=\""+snow_img+"\" border=\"0\"></a><\/div>");
+    }
+    
+    function SnowStart() 
+    { 
+        for (i = 0; i < snow_no; i++) 
+        { 
+            snow_yp[i] += snow_sty[i];
+            if (snow_yp[i] > snow_browser_height-50) 
+            {
+                snow_xp[i] = Math.random()*(snow_browser_width-snow_am[i]-30);
+                snow_yp[i] = 0;
+                snow_stx[i] = 0.02 + Math.random()/10;
+                snow_sty[i] = 0.7 + Math.random();
+            }
+            snow_dx[i] += snow_stx[i];
+            document.getElementById("snow_flake"+i).style.top=snow_yp[i]+"px";
+            document.getElementById("snow_flake"+i).style.left=snow_xp[i] + snow_am[i]*Math.sin(snow_dx[i])+"px";
+        }
+        snow_time = setTimeout("SnowStart()", 10);
+    }
+    SnowStart();
+    </script>
+<body>
+<center>
+<h1 style="background-color:tomato;font-family:Times New Roman;" >Page SUPER SECRET de Cliffhanger (Si vous etes là, c'est qu'en principe vous avez acheté la cassette UwU)</h1>
+</center>
+<button type="button" class="collapsible"><center><b>Paroles</b></center></button>
+<div class="content"  style="text-align: center;">
+  <p style="display: inline-block; text-align: left;">
+    <b><u>Cliffhanger :</u></b><br><br>
+
+    <b><u>Rage-O-Tron :</u></b><br><br>
+  
+    <b><u>Waste My Time :</u></b><br><br>
+
+    <b><u>Évolution Du Streameur :</u></b><br><br>
+
+    <b><u>4K :</u></b><br><br>
+
+    <b><u>Cédric :</u></b><br><br>
+
+    <b><u>Chameleon :</u></b><br><br>
+
+    <b><u>Neurons :</u></b><br><br>
+
+    <b><u>Coolorimetry :</u></b><br><br>
+
+    <b><u>Degré :</u></b><br><br>
+    
+    <b><u>Mulhouse forever 2 :</u></b><br><br>
+
+</p>
+</div>
+<button type="button" class="collapsible"><center><b>Anecdotes</b></center></button>
+<div class="content" style="text-align: center;">
+  <p style="display: inline-block; text-align: left;">
+    <b><u>L'album :</u></b><br><br>
+    - la pochette c'est nohx <br>
+    - il est officiellement sorti le 12 fevrier 2022 <br>
+    - crée a 80%-90% sur twitch <br>
+    - crée en 2 semaines ! (plus de 100 heures). <br>
+    - sorti en cassette en edition limité (si vous etes la c'est que vous le savez mdr) <br>
+    - Sur la cassette, al a toute fin il y a un bonus disont... ok. <br>
+    - Realisé pendant les vacances de noel <br>
+    - Dork a raté le nouvel an, car il etait a fond sur ableton. Il s'est rendu compte a 00:13 qu'on etait en 2022. <br>
+    - Il y a tentative d;'utiliser des paroels ecrite il y a 10 ans, mais quelle horreur non prité plus jamais hahaha <br>
+    - Dork a enregistré la voix sur un rode nt mini usb <br>
+    - Guitare utilisé : telecaster squier et une line6 jtv 69 <br>
+    - Dork deteste profondement l'ecriture. Ecrire les paroles en general etait la parti la plus inssuportable. <br>
+    - L'album est sorti un mois apres etre terminé car dork est parti se reposer mdr <br>
+    - les cassettes sont numertoé et signé par dork. <br>
+    - Ca fait 10 ans que Dork essai de faire un album mdr <br> 
+    - l'album fait eaxctement 44:53 minutes, soit, techniquement compatible en viynyl un jour .... !<br> <br>
+
+    <b><u>Cliffhanger :</u></b><br><br>
+    - les paroles sont vraie, dork etait un petit con quand il etait plus jeune lol <br>
+    - la voix de la chanson c'est nohx <br>
+    - les parole racontent en gros le parcours pour faire cet album mdr  <br>
+    - enregistré nohx sur audition <br>
+    - Les paroles ecrite principalement par nohx et lepetitchatvert, a la recherche d'experession de daron bauf <br>
+    - la fin devait avoir un dialogue entre nohx et dork, mais ca a ete coupé, trop long <br>
+    - Dork a mis enormement de temsp a enregistré ses replique a la fin de la chanson car elles ne lui plaisaient pas <br><br>
+
+
+    <b><u>Rage-O-Tron :</u></b><br><br>
+    - bytoune a proposé la fin de la chanson (40aiene, et qui fait des crimes car il se rend compote que sa vie est un echec)<br>
+    - la guitare composé par takoyaking <br>
+    - a la base, la rae de la chanson probvient du fait que j;'ai acheté un pyjama a walmart a 8 dolalrs et qui'il s'est dechiré apres 2 jours. Enorme haine.<br>
+    - La chanson etait sensé etre une blague mais elle a fini serieuse mdr <br>
+    - derniere chanson enregistré de l'album !<br>
+    - La seule ontribution de saradorable de l'album ever c'est le mot "Fall" dans les paroles de la chanson<br>
+    - "Curtain call" a ete proposé par Shingo<br><br>
+
+        
+    <b><u>Waste My Time :</u></b><br><br>
+    - deuxieme chanson enregistré de l álbum<br>
+    - les paroles sont un conseil efroyable de dork sur la vie : faite un plan bordel !!!! Ne perdez pas votre temps ! <br>
+    - la musique etait a la base un test de sa nouvelle guitare (viariax jtv69 mdr), mais il a tellement aimé la musique qu'il l'a gardé.<br>
+    - co ecrite avec Takoyaking<br><br>
+
+    
+    <b><u>Évolution Du Streameur :</u></b><br><br>
+    - faite avec charles<br>
+    - quasiment que de l'inmrpo, presque aucune parole ecrite <br>
+    - parti enregist;re sur audactiy mais aussi via discord dicretment dans ableton <br>
+    - La fin, est une premiere proposition de refrain qu'oin avais fait, mais elle puait de la gueule hahaha<br>
+    - C'est la premiere chanson enregistré de l'album ever<br>
+    - le premier essai de refrain etait une catastrophe <br>
+    - la dexueiem parti de la chanson, a ete rensgitré alorss que charles et dork etait enrhumé a mort <br>
+    - une partie des percussion sont des tambour japonais<br>
+    - Au debut de la chanson dork dit, LPL, reference aux lettres random que les rappeur parfoit disen en debut de chansons sans contexte<br><br>
+
+    <b><u>4K :</u></b><br><br>
+    - co chanté avec Mouton2prairie<br>
+    - co ecrit avec mouton de prairie<br>
+    - basé sur nos expereinece de rupture<br>
+    - on a ecrit trop de parole par rapport al achanson, on s'en est rendu compte lors de l'enregistrement <br>
+    - a la base Mouton23praire devait chanter sur le refrain, mais ma voix aigue rendu mieux sans sa voix (trop grave) (deso mdr)<br>
+    - mouton2prarie enregist're sur audacity<br>
+    - c'etait a la base un projet musical que j'avais fait il y a longtemps, que j; ai repris par ce que je voulais pas me faire chier a composer un novueau truc <br>
+    - Mouton a failli ne pas participer a l'album du tout a cause de probleme de calendrier<br>
+    - Dork pensait au jeu toy story 2 sur ps1 quand il disais dans le refrain "old school game"<br>
+    - moutoiin a enregistré sa voix sur un rode nt misi usb aussi mdr<br><br>
+
+    <b><u>Cédric :</u></b><br><br>
+    - "il est ou le vrai cedric" enregist're par papa louis, dans son telephone deguelasse, dans sa salle de bain. Un enfer a mixer <br>
+    - cedric est presque autobiographique (avec plei nde detail changé, mais le contexte est le meme) -> trop penser pour etre "normal" mais au point d'etre bizarre <br>
+    - COmpletement deconnecté de la realité  <br>
+    - J'ai commancé a etre comme ca dans l'adolescence, et 10 plus tard, je ne le suis plus du tout. Et justement, qu'en est il des personnes de l'epoque? lol <br>
+    - Cedric a ete ecrite avec paplouis, eenregistré et fini en une nuit <br>
+    - le oui alo c'est shingo et c'est lui qui a donné l'idee du telephone <br>
+    - le nom d;a vion cité sont vraie, tous proposé par papalouis<br>
+    - cedric est un prenom "generique" pris pour la chanson. a la base elle devait s'appeler henry. <br>
+    - avant de commencert la compo, papalouis devait faire de la batterie, mais il ne pouvais pas l'enregistrer  <br>
+    - Tous les oui alo de shingo de la chanson sont differents <br>
+    - la voix de papalouis a ete une =galere modifié et le resultat est tres robotique et horrible, mais justifié artisitquement par "c'est le coté analyse de cedric" <br><br>
+
+    <b><u>Chameleon :</u></b><br><br>
+    - Enorme travail de re-ecriture avec Bamboo<br>
+    - voix feminin de bamboo<br>
+    - coecrite en MAJORITÉ avec bamboo et un peu a vec le grtand vizir <br>
+    - refrain avec le grand vizir <br>
+    - solo de piano de Alxios<br>
+    - la chansopn qui a demandé le plus de travail niveau ecriture, le temps etait passé dessus etait horrible <br>
+    - la voix du vieil homme est la mienne mais modifié<br>
+    - chanson avec le plus d'hjistoire differentes, pour exprimer le meme sentiment (trop bien d'adapté au point d'en etre bloqué)<br>
+    - le grand vizir devait faire la voix du vieux, mais l'accent francais etait trop fort <br>
+    - la voix du grand vizir pour le refrain a ete une galere impossible a mixer (l'experience que ca ma fourni mdr)<br>
+    - Bamboo a fait nuit blanche pour realiser la chanson avec Dork (merci lol !)<br>
+    - le solo de piano d'alxios faisait environ 3 minutes. Il a ete coupé a environ 1 minutes.<br><br>
+
+    <b><u>Neurons :</u></b><br><br>
+    - une des derniere enregistrée <br>
+    - enregistré par SHingo, alors qu'il etait malade  <br>
+    - parti de "regarder bob l'eponge a la tele en etant enfant" a une sorte de "manuip[ulation de la consommation" et ocntrole des masses (selon shingo) <br>
+    - Honnetement, moi Dork, je ne comprends pas les paroles. Elles sont jolies, mais elles veulent rien dire pour moi mdr c'est juste un accumulat de mots jolis <br>
+    - shingoi sur audacity  <br>
+    - Dork ne voulais plus se faire chier a ecrire, donc il a demandér a shingo d'ecrire les dernier paragraphe  <br>
+    - principalement ecrite par shingo <br>
+    - On a decallé l'enresgitrement au moins 4 fois, car pas le temps mdr<br>
+    - Dork est vraiment jalou du talent et de la voix de Shingo<br>
+    - une premiure version de la chanson devait sortir, mais peut avant la sortie, dork a doublé ses voix de couplet car il les trouvait pas assez bon <br>
+    - Shingo a failli s'endormir sur l'enregistrement <br>
+    - Il s'est d'ailleurs endormi une fois les enregistrement fini, en oublkiant de couper discord <br><br>
+
+    <b><u>Coolorimetry :</u></b><br><br>
+    - C'est un projet musicale de BRKPNT laissé a l'abandon, qu'on a repris<br>
+    - Dork a galeré sa race sur la guitare car les notes de la musique n'etait pas majeur ou mineur (il y a vait de la 7eme ou des connerie musicale du genre)<br>
+    - la musique etait bien plus lkongue a la base, mais dork a insisté pour la couper a 4 minutes total<br><br> 
+    
+
+    <b><u>Degré :</u></b><br><br>
+    - ecrite principalement par RobinKama (quel crack, il est ultra bon pour l'ectirure)<br>
+    - enregistré sur discord et audacity (voix robin)<br>
+    - La musique a ete composé en moins 10 de minutes (aucun respect)<br>
+    - Qu'est ce qu'on a rigolé en l'ecoutant apres mdr<br>
+    - c'est evdement une parodie de rap, sans aucune vergogne<br><br>
+    
+    <b><u>Mulhouse forever 2 :</u></b><br><br>
+    - suite a l'extradoinaire chanson mulhouse forever (dispo sur soundcloud, ecrite enregistré en 30 minutes lors d'une soiree defi avec garibaldy) <br>
+    - ecrite et enregistré en une soirée<br>
+    - musique par garibaldy<br>
+    - Toutes les references dans la chanson sont des vrai ref a la ville de mulhouse <br>
+    - on a poncé le trip advisor de mulhouse pour ecrire les paroles mdr <br>
+    - DOrk a ete insupportable avec garibaldy sur la compositino de la musique.<br><br>
+    
+  </p>
+</div>
+<button type="button" class="collapsible"><center><b>Crédits</b></center></button>
+<div class="content"  style="text-align: center;">
+  <p style="display: inline-block; text-align: left;"> Un énorme merci à ceux qui m'ont aidé pour faire cet album, de pret ou de loin : <br>
+- Moi, Dork. mdr <br>
+- Charles Coco <br>
+- Robin Kama <br>
+- Le grand vizir <br>
+- Nohxyde (ou Nohx pour les intimes) <br>
+- PapaLouis <br>
+- LePetitChatVert <br>
+- Mouton2Prairie <br>
+- Takoyaking <br>
+- Shingo <br>
+- Bamboo <br>
+- Saradorable <br>
+- Bytoune <br>
+- Alxios <br>
+- EliosLaFougere <br>
+
+</p>
+</div>
+<script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+    
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+          content.style.display = "none";
+        } else {
+          content.style.display = "block";
+        }
+      });
+    }
+    </script>
+</body>
+</html>
